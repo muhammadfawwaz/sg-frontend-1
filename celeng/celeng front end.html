@@ -3,100 +3,142 @@
 <head>
 	<title></title>
 	<style type="text/css">
-		.navigasi {
-			height: 30px;
-		}
-		body {
-			width: 80%;
+		.container {
+			width: 70%;
+			height: 600px;
 			margin: auto;
 		}
-		.logo {
-			padding-right: 470px;
+		.container .navbar {
+			height: 10%;
 		}
-		.menu {
-			width: 100%;
+		.container .navbar .logo, .container .navbar .menu{
+			height: 100%;
 		}
-		.main-article {
-			width: 68%;
+		.container .navbar .logo {
+			width: 60%;
+			float: left;
+		}
+		.container .navbar .menu{
+			text-align: right;
+			width: 40%;
+			float: right;
+		}
+		.container .navbar ul li{
+			display: inline;
+		}
+		.container .main-article {
+			height: 40%;
+		}
+		.container .main-article .article-picture, .container .main-article .sidebar-picture {
+			height: 100%;
+		}
+		.container .main-article .article-picture {
+			width: 65%;
 			background-color: blue;
-			display: inline-block;
-			height: 400px;
+			float: left;
 		}
-		.sub-main-article {
-			float: right;
+		.container .main-article .sidebar-picture {
+			width: 33%;
 			background-color: yellow;
-			width: 30%;
-			height: 400px;
-		}
-		.gambar {
-			width: 100%;
-		}
-		.articlee {
-			width: 100%;
-			display: inline-block;
-		}
-		.left-article {
-			width: 40%;
-			display: inline-block;
-		}
-		.right-article {
-			width: 40%;
-			display: inline-block;
-		}
-		p {
-			display: inline-block;
-		}
-		.quote {
-			width: 15%;
 			float: right;
-			display: inline-block;
+		}
+		.container .article {
+			height: 63%;
+		}
+		.container .article .article-content {
+			width: 65%;
+			height: 100%;
+			float: left;
+		}
+		.container .article .article-content p{
+			text-align: justify;
+		}
+		.container .article .article-content a{
+			background-color: red;
+		}
+		.container .article .article-content .left-article, .container .article .article-content .right-article {
+			width: 48%;
+			height: 100%;
+		}
+		.container .article .article-content .left-article {
+			float: left;
+		}
+		.container .article .article-content .right-article {
+			float: right;
+		}
+		.container .article .quotes {
+			width: 33%;
+			height: 100%;
+			float: right;
+		}
+		.container .article .quotes blockquote{
+			content: open-quote;
+		}
+		.container .article h2 {
+			border-bottom: 5px solid red;
+		}
+		.container .copyright {
+			width: 100%;
+			height: 10%;
+		}
+		.container .copyright p {
+			border-top: 5px solid red;
 		}
 	</style>
 </head>
 <body>
-	<div class="navigasi">
-		<table class="menu">
-			<tr>
-				<td class="logo">Logo</td>
-				<td>Review</td>
-				<td>Career</td>
-				<td>Product</td>
-				<td>About</td>
-				<td>Information</td>
-			</tr>
-		</table>
-	</div>
-	<div class="gambar">
+	<div class="container">
+		<div class="navbar">
+			<div class="logo">
+				<p>Logo</p>
+			</div>
+			<div class="menu">
+				<ul>
+					<li>Review</li>
+					<li>Career</li>
+					<li>Product</li>
+					<li>About</li>
+					<li>Information</li>
+				</ul>
+			</div>
+		</div>
 		<div class="main-article">
-			<p>Ini judul bekron biru</p>
+			<div class="article-picture">
+				<p>ini judul keren dong ah jangan kaya gitu nap ahjdbuahsj iuqha</p>
+			</div>
+			<div class="sidebar-picture">
+				
+			</div>
 		</div>
-		<div class="sub-main-article">
-			
+		<div class="article">
+			<div class="article-content">
+				<div class="left-article">
+					<h2>Judul Pertama</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a href="">Read More</a>
+				</div>
+				<div class="right-article">
+					<h2>Judul Kedua</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+					<a href="">Read More</a>
+				</div>
+			</div>
+			<div class="quotes">
+				<blockquote>
+					Ini disi sama quotes kdjcdkfhb dfjvnkfjv dfjvn idom keren biar kaya di google gitu lho ah
+				</blockquote>
+			</div>	
 		</div>
-	</div>
-	<div class="articlee">
-		<div class="left-article">
-			<h1>Judul Pertama</h1>
-			<p>wdwefdwefweferferferfreferfeaaaa 
-				defderfergergrg rtgrh hrtrerw wef
-				dwef rgergr hrtqwq fee klskkuehf
-				dwef rgergrehrtqwq fee klskkuehf
-				dwef rge grehr qwq fee klskkuehf
-				dwef rgergrehrtqwq fee klskkuehf
-				dwef rgergrehrtqwq fee klskkuehf</p>
-		</div>
-		<div class="right-article">
-			<h1>Judul Kedua</h1>
-			<p>wdwefdwefweferferferfreferfeaaaa 
-				defderfergergrg rtgrh hrtrerw wef
-				dwef rgergr hrtqwq fee klskkuehf
-				dwef rgergrehrtqwq fee klskkuehf
-				dwef rge grehr qwq fee klskkuehf
-				dwef rgergrehrtqwq fee klskkuehf
-				dwef rgergrehrtqwq fee klskkuehf</p>
-		</div>
-		<div class="quote">
-			<p>Ini adalah quote harusnya panjnag</p>
+		<div class="copyright">
+			<p>®copyright</p>
 		</div>
 	</div>
 </body>
